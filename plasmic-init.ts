@@ -1,5 +1,5 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
-import {TabButton, TabsContainer, TabUnderline} from "./components/Tabs";
+import { TabButton, TabsContainer, TabUnderline } from "./components/Tabs";
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -55,14 +55,15 @@ PLASMIC.registerComponent(TabsContainer, {
               {
                 type: "component",
                 name: "TabUnderline",
-              }
-            ]
+              },
+            ],
           },
           {
             type: "text",
-            value: "You can insert tab contents here and update them based on dynamic values.",
-          }
-        ]
+            value:
+              "You can insert tab contents here and update them based on dynamic values.",
+          },
+        ],
       },
     },
   },
@@ -80,8 +81,8 @@ PLASMIC.registerComponent(TabUnderline, {
     },
   },
   defaultStyles: {
-    background: '#7777ff',
-    height: "2px"
+    background: "#7777ff",
+    height: "2px",
   },
 });
 
@@ -96,14 +97,14 @@ PLASMIC.registerComponent(TabButton, {
     children: {
       type: "slot",
       defaultValue: {
-        type: 'default-component',
-        kind: 'button',
+        type: "default-component",
+        kind: "button",
         props: {
           children: {
-            type: 'text',
-            value: 'Some tab'
-          }
-        }
+            type: "text",
+            value: "Some tab",
+          },
+        },
       },
     },
   },
