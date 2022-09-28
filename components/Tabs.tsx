@@ -72,7 +72,7 @@ export function TabButton({className,children, tabKey}: TabButtonProps) {
       })
     }
   }, [JSON.stringify(bbox), tabKey === activeKey])
-  return <div className={className} ref={ref}>{cloneElement(React.Children.only(children) as ReactElement, {
+  return <div className={className} ref={ref}>{cloneElement(React.Children.toArray(children)[0] as ReactElement, {
     isActive: tabKey && activeKey && activeKey === tabKey,
     onClick: () => {
       setTabKey(tabKey);
