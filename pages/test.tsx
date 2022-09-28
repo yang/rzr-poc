@@ -1,6 +1,8 @@
 import {TabButton, TabsContainer, TabUnderline} from "../components/Tabs";
 import {DataCtxReader} from "@plasmicapp/host";
 
+const DataCtxReader1: any = DataCtxReader;
+
 export default function Page() {
   return (
     <div>
@@ -36,14 +38,14 @@ export default function Page() {
           transition: .2s ease all;
         }
         `}</style>
-        <div><DataCtxReader>
-          {ctx =>
-            <TabContents>
+        <div><DataCtxReader1>
+          {(ctx: any) =>
+            <>
               <div className={ctx.currentTabKey === 'a' ? 'in' : 'out'}>alpha</div>
               <div className={ctx.currentTabKey === 'b' ? 'in' : 'out'}>beta</div>
-            </TabContents>
+            </>
           }
-        </DataCtxReader></div>
+        </DataCtxReader1></div>
       </TabsContainer>
     </div>
   );
