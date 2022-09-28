@@ -4,9 +4,9 @@ import { TabButton, TabsContainer, TabUnderline } from "./components/Tabs";
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
-      id: "rMt1nTH5zjscZHuJq7oXPP",
+      id: "7thg6zpFSq4RFi2j999GDw",
       token:
-        "NoU5ubima53CNicD1pn8raIcq7FfpODH8nvZS6OSPM2gNR3cOcCFiDUYRSxmQqckxwjlc4FwT5iwCNvE7iLQ",
+        "Z9opgmQZUfprTZdYlbSAXsZdwFfmgpj3sQ4lzTDXhnjzelpWKwQP5CyNRSGxUShQkqEQDNf8metAF0bCwt7nA",
     },
   ],
 
